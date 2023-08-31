@@ -4,8 +4,8 @@
                     xmlns:units="clr-namespace:DarkSkinWindow.UI.Units"
                     xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf">
     <Style x:Key="BAR.DRAGGABLE" TargetType="{x:Type units:DraggableBar}">
-        <Setter Property="Grid.ColumnSpan" Value="4" />
-        <Setter Property="Background" Value="#222222" />
+        <Setter Property="Grid.ColumnSpan" Value="3" />
+        <Setter Property="Background" Value="Transparent" />
     </Style>
     <Style TargetType="{x:Type views:DarkWindow}">
         <Setter Property="Background" Value="#252525"/>
@@ -32,13 +32,23 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             UseLayoutRounding="{TemplateBinding UseLayoutRounding}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
-                        <james:JamesGrid Rows="Auto, *" Columns="*, Auto, Auto, Auto">
-                            <units:MinimizeButton x:Name="PART_MinButton"/>
-                            <units:MaximizeButton x:Name="PART_MaxButton"/>
-                            <units:CloseButton x:Name="PART_CloseButton"/>
-                            <ContentPresenter Grid.ColumnSpan="4"
-                                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Padding="0">
+                        <james:JamesGrid Rows="Auto, *">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <units:DraggableBar x:Name="PART_DragBar" Style="{StaticResource BAR.DRAGGABLE}"/>
+                                <ContentPresenter IsHitTestVisible="False"
+                                                  ContentTemplate="{TemplateBinding TitleTemplate}"
+                                                  ContentSource="Title"/>
+                                <units:MinimizeButton x:Name="PART_MinButton" Grid.Column="1"/>
+                                <!--<units:MaximizeButton x:Name="PART_MaxButton"/>-->
+                                <units:CloseButton x:Name="PART_CloseButton" Grid.Column="2"/>
+                            </Grid>
+                            <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}"
                                               ContentSource="Content"/>
                         </james:JamesGrid>
                     </Border>
