@@ -1,11 +1,11 @@
-﻿using DarkWindow.SkinSupport.UI.Units;
+﻿using DarkSkinWindow.UI.Units;
 using Jamesnet.Wpf.Controls;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace DarkWindow.SkinSupport.UI.Views
+namespace DarkSkinWindow.UI.Views
 {
     public class DarkWindow : JamesWindow
     {

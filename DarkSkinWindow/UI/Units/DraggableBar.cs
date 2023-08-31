@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace DarkWindow.SkinSupport.UI.Units
+namespace DarkSkinWindow.UI.Units
 {
     public class DraggableBar : Border
     {
