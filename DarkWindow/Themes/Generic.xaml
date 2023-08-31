@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/DarkWindow.SkinSupport;component/Themes/Units/CloseButton.xaml"/>
+        <ResourceDictionary Source="/DarkWindow.SkinSupport;component/Themes/Units/MinimizeButton.xaml"/>
+        <ResourceDictionary Source="/DarkWindow.SkinSupport;component/Themes/Units/MaximizeButton.xaml"/>
+        <ResourceDictionary Source="/DarkWindow.SkinSupport;component/Themes/Views/DarkWindow.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

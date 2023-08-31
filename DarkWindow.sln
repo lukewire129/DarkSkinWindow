@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkWindow.Skin", "DarkWindow\DarkWindow.Skin.csproj", "{DC23CE3D-E857-46B3-8EB0-B99908769503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC23CE3D-E857-46B3-8EB0-B99908769503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC23CE3D-E857-46B3-8EB0-B99908769503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC23CE3D-E857-46B3-8EB0-B99908769503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC23CE3D-E857-46B3-8EB0-B99908769503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58A556EB-8644-44D9-8CD7-FBD02282CE4F}
+	EndGlobalSection
+EndGlobal
